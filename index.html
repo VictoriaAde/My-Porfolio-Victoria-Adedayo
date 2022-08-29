@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
     <title>Victoria Portfolio</title>
   </head>
   <body>
@@ -45,10 +46,18 @@
           </div>
 
           <div class="menu_btn_con">
-            <button id="openMenuBtn" class="open-menu">
+            <button
+              id="openMenuBtn"
+              class="open-menu"
+              aria-label="Open menu button"
+            >
               <img src="./images/menu.svg" alt="Open menu button" />
             </button>
-            <button id="closeMenuBtn" class="close-menu">
+            <button
+              id="closeMenuBtn"
+              class="close-menu"
+              aria-label="Close menu button"
+            >
               <img src="./images/close-menu.svg" alt="Close menu button" />
             </button>
           </div>
@@ -63,7 +72,25 @@
           </nav>
         </div>
       </header>
-      <section id="hero-section"></section>
+      <section id="hero-section">
+        <div>
+          <h3>
+            Hello
+            <span class="hello-wave">
+              <img src="./images/Wave-desktop.png" alt="wave hand" />
+            </span>
+          </h3>
+          <h2>I’m Victoria Adedayo</h2>
+          <h3>Frontend Developer</h3>
+          <p>
+            I am a Javascript Developer, I code beautiful things on the internet
+          </p>
+          <a href="#" aria-label="Hire me button" class="hire-btn">Hire Me</a>
+        </div>
+        <div class="hero_img-div">
+          <!-- <img src="./images/yellow.webp" alt="Victoria wearing yellow" /> -->
+        </div>
+      </section>
       <section id="about-section"></section>
       <section id="project-section"></section>
       <section id="blog-section"></section>
