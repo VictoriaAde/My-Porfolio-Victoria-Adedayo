@@ -178,10 +178,10 @@
     padding: 12rem 9rem 0;
   }
   #hero-section h3:nth-child(1) {
-    font-size: var(--bigger);
+    font-size: var(--big);
   }
   #hero-section h1:nth-child(2) {
-    font-size: var(--biggest);
+    font-size: var(--bigger);
   }
   #hero-section h3:nth-child(3) {
     font-size: var(--big);
