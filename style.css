@@ -20,7 +20,7 @@
 }
 body {
   background-color: var(--secondary-color);
-  height: 1000px;
+  font-family: "Roboto", sans-serif;
 }
 
 header li {
@@ -78,9 +78,8 @@ header a {
 }
 /* hero section */
 #hero-section {
-  padding: 10rem 2rem 0;
+  padding: 10rem 1.5rem 0;
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 .hello-wave {
   position: relative;
@@ -94,7 +93,7 @@ header a {
   color: var(--accent-color);
   font-size: var(--small);
 }
-#hero-section h2:nth-child(2) {
+#hero-section h1:nth-child(2) {
   font-size: var(--bigger);
   color: var(--light-gray);
   margin-top: 0.8rem;
@@ -106,7 +105,7 @@ header a {
 }
 #hero-section p:nth-child(4) {
   color: var(--light-gray);
-  font-size: var(--smaller);
+  font-size: var(--base-size);
   margin: 1.2rem 0 2.3rem;
 }
 .hire-btn {
@@ -119,4 +118,71 @@ header a {
 }
 .hero_img-div {
   display: none;
+}
+
+/* about */
+#about-section {
+  margin: 4rem 1.2rem;
+}
+.about_text {
+  margin-bottom: 4rem;
+}
+.section_heading {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.section_heading h2 {
+  color: var(--dark-gray);
+  display: inline;
+  font-size: var(--big);
+}
+.section_heading span {
+  width: 75px;
+  border-bottom: 1px solid #ccd6f6;
+  display: inline-block;
+  margin: 0 1rem 0.5rem;
+}
+
+.about_text > p {
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+  font-size: var(--smaller);
+}
+.about_img {
+  display: flex;
+  justify-content: center;
+}
+.about_img img {
+  width: 275px;
+}
+#project-section {
+  text-align: center;
+  margin: 4rem 1rem;
+  position: relative;
+}
+#project-section p {
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+  font-size: var(--base-size);
+}
+.triangle_shape_mobile {
+  position: absolute;
+  top: 17%;
+  left: -9px;
+}
+.triangle_shape_desktop {
+  display: none;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.089rem 1rem;
+}
+.project {
+  width: 270px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 1.286rem;
 }
