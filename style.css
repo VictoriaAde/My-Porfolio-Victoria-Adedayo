@@ -33,8 +33,7 @@ header a {
   text-decoration: none;
 }
 
-/* nav */
-
+/* NAV SECTION */
 .desktop-menu {
   display: none;
 }
@@ -76,7 +75,7 @@ header a {
 .open-menu {
   background-color: var(--secondary-color);
 }
-/* hero section */
+/* HERO SECTION */
 #hero-section {
   padding: 10rem 1.5rem 0;
   text-align: center;
@@ -111,7 +110,7 @@ header a {
 .hire-btn {
   background-color: var(--accent-color);
   text-decoration: none;
-  /* width: 127px; */
+  font-weight: 500;
   height: 55px;
   padding: 0.5rem 1.2rem;
   border-radius: 5px;
@@ -120,7 +119,7 @@ header a {
   display: none;
 }
 
-/* about */
+/* ABOUT SECTION */
 #about-section {
   margin: 4rem 1.2rem;
 }
@@ -177,7 +176,7 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3.089rem 1rem;
+  margin: 3.089rem 1rem 2.934rem;
 }
 .project {
   width: 270px;
@@ -186,3 +185,19 @@ header a {
   border-radius: 5px;
   margin-bottom: 1.286rem;
 }
+
+.github_link {
+  text-decoration: none;
+  text-align: center;
+  background: #64ffda;
+  color: var(--secondary-color);
+  font-weight: 500;
+  letter-spacing: 0.001em;
+  border-radius: 5px;
+  padding: 1.063rem 1.219rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* BLOG SECTION */
