@@ -77,7 +77,7 @@ header a {
 }
 /* HERO SECTION */
 #hero-section {
-  padding: 12rem 1.5rem 2rem;
+  padding: 12rem 1.5rem 9rem;
   text-align: center;
 }
 .hello-wave {
@@ -248,7 +248,7 @@ header a {
   position: relative;
   padding: 4rem 1rem;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 #contact-section p {
   color: var(--light-gray);
