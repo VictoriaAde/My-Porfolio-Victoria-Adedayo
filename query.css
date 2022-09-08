@@ -98,6 +98,54 @@
   .triangle_shape_mobile {
     display: none;
   }
+  /* BLOG SECTION */
+  .blog_con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .blog_description p {
+    font-size: var(--base-size);
+  }
+  .blog_img_one {
+    margin: 0 1rem;
+  }
+  .blog_img_two {
+    margin: 0 1rem 0 0;
+  }
+  .blog_img_three {
+    margin: 0 1rem 0 0;
+  }
+  /* CONTACT SECTION */
+  #contact-section {
+    padding: 0 2.7rem;
+  }
+  #contact-section p {
+    color: var(--light-gray);
+    text-align: center;
+    font-size: var(--base-size);
+  }
+  .form_flex_div {
+    display: flex;
+    gap: 2rem;
+  }
+  #contact-section form input[type="submit"] {
+    padding: 1.4rem 3rem;
+  }
+  .Uptriangle_shape_desktop {
+    display: block;
+    position: absolute;
+    top: 52%;
+    right: 3px;
+  }
+  .Uptriangle_shape_mobile {
+    display: none;
+  }
+  #contact-section form input[type="text"] {
+    height: 70px;
+  }
+  #contact-section form textarea {
+    height: 270px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -109,17 +157,17 @@
     justify-content: space-between;
     align-items: center;
   }
-  .hero_intro-div {
+  .hero_intro_div {
     width: 50%;
     padding-right: 2rem;
   }
-  .hero_img-div {
+  .hero_img_div {
     width: 50%;
     display: block;
     display: flex;
     justify-content: center;
   }
-  .hero_img-div img {
+  .hero_img_div img {
     width: 300px;
   }
 }
@@ -128,7 +176,7 @@
     --type-scale: 1.414;
   }
   /* HERO SECTION */
-  .hero_img-div img {
+  .hero_img_div img {
     width: 400px;
   }
   /* RPOJECT SECTION */
@@ -152,6 +200,30 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 5rem;
+  }
+  #contact-section form input[type="text"],
+  #contact-section form textarea {
+    font-size: var(--base-size);
+  }
+  #contact-section form input[type="submit"] {
+    padding: 1.656rem 3.938rem;
+  }
+  /* FOOTER */
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    border: none;
+  }
+  #footer div:nth-child(1) {
+    order: 1;
+  }
+  #footer div:nth-child(2) {
+    order: 3;
+  }
+  #footer div:nth-child(3) {
+    order: 2;
   }
 }
 
@@ -201,7 +273,7 @@
   #project-section p {
     font-size: var(--small);
   }
-  .hero_img-div img {
+  .hero_img_div img {
     width: 550px;
   }
   .hello-wave img {
