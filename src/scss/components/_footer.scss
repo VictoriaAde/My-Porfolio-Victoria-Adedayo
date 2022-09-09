@@ -1,0 +1,21 @@
+/* FOOTER SECTION */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-gray);
+  font-size: var(--base-size);
+  border-top: 2px solid var(--light-gray);
+  padding-top: 2rem;
+}
+#footer > div {
+  margin-bottom: 3rem;
+}
+.social_link {
+  font-size: var(--small);
+  color: var(--secondary-color);
+  background: var(--light-gray);
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-right: 0.583rem;
+}

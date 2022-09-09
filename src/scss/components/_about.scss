@@ -1,0 +1,36 @@
+/* ABOUT SECTION */
+#about-section {
+  margin: 6rem 1.2rem;
+}
+
+.about_text {
+  margin-bottom: 4rem;
+}
+.section_heading {
+  margin: 3rem 0 1.5rem;
+  text-align: center;
+}
+.section_heading h2 {
+  color: var(--dark-gray);
+  display: inline;
+  font-size: var(--big);
+}
+.section_heading span {
+  width: 75px;
+  border-bottom: 1px solid #ccd6f6;
+  display: inline-block;
+  margin: 0 1rem 0.5rem;
+}
+
+.about_text > p {
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+  font-size: var(--smaller);
+}
+.about_img {
+  display: flex;
+  justify-content: center;
+}
+.about_img img {
+  width: 275px;
+}

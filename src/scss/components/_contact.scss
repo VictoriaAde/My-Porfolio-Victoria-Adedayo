@@ -1,0 +1,58 @@
+/* CONTACT SECTION */
+#contact-section {
+  position: relative;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#contact-section p {
+  color: var(--light-gray);
+  font-size: var(--smaller);
+  margin-bottom: 2rem;
+}
+
+#contact-section form input[type='text'],
+#contact-section form textarea {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background: var(--secondary-color);
+  padding: 0.8rem;
+  color: var(--light-gray);
+  width: 100%;
+  margin-bottom: 0.625rem;
+  transition: 0.2s ease all;
+}
+#contact-section form input[type='text']:focus,
+#contact-section form textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  outline: none;
+}
+#contact-section form input::placeholder,
+#contact-section textarea::placeholder {
+  color: var(--light-gray);
+  font-weight: 500;
+}
+#contact-section form input[type='submit'] {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  padding: 1.063rem 1.969rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  margin-top: 1rem;
+}
+#contact-section form input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+#contact-section form input[type='submit']:active {
+  opacity: 0.4;
+}
+.Uptriangle_shape_desktop {
+  display: none;
+}
+.Uptriangle_shape_mobile {
+  position: absolute;
+  top: 67%;
+  right: 3px;
+}

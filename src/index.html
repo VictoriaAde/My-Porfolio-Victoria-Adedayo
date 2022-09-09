@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./scss/style.scss" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,10 +21,11 @@
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- css files  -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="query.css" />
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link rel="stylesheet" href="scss/query.scss" />
     <title>Victoria Portfolio</title>
   </head>
+
   <body>
     <main>
       <!-- HEADER SECTION -->
@@ -88,28 +91,30 @@
           </nav>
         </div>
       </header>
-
       <!-- HERO SECTION -->
-      <section id="hero-section">
-        <div class="hero_intro_div">
-          <h3>
+      <section id="hero" class="hero">
+        <div class="hero_intro">
+          <h3 class="hero__welcome">
             Hello
             <span class="hello-wave">
               <img
+                class="hero__welcome--img"
                 src="https://res.cloudinary.com/freakingspicy/image/upload/v1662446096/portfolio%20imasges/Wave_mtkctt.png"
                 alt="wave hand"
               />
             </span>
           </h3>
-          <h1>I'm Victoria Adedayo</h1>
-          <h3>Frontend Developer</h3>
-          <p>
+          <h1 class="hero__heading">I'm Victoria Adedayo</h1>
+          <h3 class="hero__subheading">Frontend Developer</h3>
+
+          <p class="hero__description">
             I am a Javascript Developer, who is passionate about build user
             friendly and beautiful applications on the internet
           </p>
-          <a href="#" aria-label="Hire me button" class="hire_btn">Hire Me</a>
+
+          <a href="#" aria-label="Hire me button" class="hero__cta">Hire Me</a>
         </div>
-        <div class="hero_img_div">
+        <div class="hero__img">
           <img
             src="https://res.cloudinary.com/freakingspicy/image/upload/v1662446065/portfolio%20imasges/yellow_njnp0k.svg"
             alt="Victoria wearing yellow"
@@ -118,7 +123,7 @@
       </section>
 
       <!-- ABOUT SECTION -->
-      <section id="about-section">
+      <section id="about-section" class="about-section">
         <div>
           <article class="about_text">
             <div class="section_heading text_left">
@@ -170,7 +175,7 @@
       </section>
 
       <!-- PROJECT SECTION -->
-      <section id="project-section">
+      <section id="project-section" class="project-section">
         <div class="triangle_shape_mobile">
           <img
             src="https://res.cloudinary.com/freakingspicy/image/upload/v1662454460/portfolio%20imasges/triangle-shape-mobile_bycgna.svg"
@@ -209,7 +214,7 @@
       </section>
 
       <!-- BLOG SECTION -->
-      <section id="blog-section">
+      <section id="blog-section" class="blog-section">
         <div class="section_heading">
           <h2>My Blog</h2>
           <span></span>
@@ -255,7 +260,7 @@
       </section>
 
       <!-- CONTACT SECTION -->
-      <section id="contact-section">
+      <section id="contact-section" class="contact-section">
         <div class="section_heading">
           <h2>Get In Touch</h2>
           <span></span>
@@ -316,7 +321,7 @@
       </section>
 
       <!-- FOOTER SECTION -->
-      <footer id="footer">
+      <footer id="footer" class="main-footer">
         <div>
           <img
             src="https://res.cloudinary.com/freakingspicy/image/upload/v1662596235/portfolio%20imasges/big-logo_ahyscc.svg"
@@ -333,6 +338,6 @@
         </div>
       </footer>
     </main>
-    <script src="script.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

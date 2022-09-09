@@ -1,0 +1,41 @@
+/* BLOG SECTION */
+#blog-section {
+  margin: 7rem 0 4rem;
+}
+.blog_description {
+  padding: 0.8rem;
+}
+.blog_description h2 {
+  color: var(--dark-gray);
+  margin-bottom: 0.6rem;
+  font-size: var(--big);
+}
+.blog_description p {
+  color: var(--light-gray);
+  font-size: var(--smaller);
+}
+.blog_description span {
+  width: 105px;
+  border-bottom: 4px solid var(--accent-color);
+  display: inline-block;
+  margin: 0.8rem 0;
+}
+.blog_img_one {
+  background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1662583806/portfolio%20imasges/blog-img-one_ighiqe.svg'),
+    #0a192f;
+  background-size: cover;
+  height: 219px;
+  margin: 1rem;
+}
+.blog_img_two {
+  background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1662585460/portfolio%20imasges/blog-two-img_lncbkd.svg');
+  height: 219px;
+  background-size: cover;
+  margin: 1rem;
+}
+.blog_img_three {
+  background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1662585463/portfolio%20imasges/blog-three-img_qssddx.svg');
+  height: 219px;
+  background-size: cover;
+  margin: 1rem;
+}

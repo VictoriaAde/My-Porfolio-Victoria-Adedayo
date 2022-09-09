@@ -1,0 +1,45 @@
+.hero {
+  padding: 16rem 1.5rem 9rem;
+  text-align: center;
+
+  &__heading {
+    color: var(--accent-color);
+    font-size: var(--small);
+    margin-bottom: 2rem;
+  }
+
+  &__subheading {
+    color: var(--accent-color);
+    margin-top: 0.4rem;
+    font-size: var(--small);
+    margin-bottom: 2rem;
+  }
+
+  &__welcome {
+    font-size: var(--bigger);
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+    position: relative;
+
+    &--img {
+      margin-bottom: -0.5rem;
+    }
+  }
+
+  &__description {
+    margin: 2rem 0;
+    color: var(--light-gray);
+    font-size: var(--base-size);
+    margin-bottom: 2rem;
+  }
+
+  &__cta {
+    background-color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}
