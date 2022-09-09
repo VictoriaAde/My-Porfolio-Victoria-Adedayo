@@ -59,11 +59,11 @@
     font-size: var(--base-size);
   }
   /* ABOUT SECTION */
-  #about-section {
+  #about {
     display: flex;
     justify-content: center;
   }
-  #about-section > div {
+  #about > div {
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
@@ -194,7 +194,7 @@
   .about_img img {
     width: 450px;
   }
-  #about-section > div {
+  #about > div {
     width: 90%;
     display: flex;
     flex-direction: row-reverse;
@@ -283,7 +283,7 @@
   }
 
   /* ABOUT SECTION */
-  #about-section > div {
+  #about > div {
     width: 80%;
     gap: 2rem;
   }

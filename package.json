@@ -27,11 +27,6 @@
     "not ie <= 9",
     "last 3 versions"
   ],
-  "plugins": {
-    "posthtml-include": {
-      "root": "./src"
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC"
