@@ -1,0 +1,15 @@
+:root {
+  --base-size: 1rem;
+  --type-scale: 1.25;
+  --small: calc(var(--base-size) * var(--type-scale));
+  --big: calc(var(--small) * var(--type-scale));
+  --bigger: calc(var(--big) * var(--type-scale));
+  --biggest: calc(var(--bigger) * var(--type-scale));
+  --smaller: calc(var(--base-size) / var(--type-scale));
+
+  --accent-color: #64ffda;
+  --secondary-color: #0a192f;
+  --light-gray: #ccd6f6;
+  --dark-gray: #8892b0;
+  --black: #1c1c1c;
+}
