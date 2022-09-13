@@ -1,0 +1,152 @@
+/* CONTACT SECTION */
+.contact {
+  position: relative;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  &__text {
+    color: var(--light-gray);
+    font-size: var(--smaller);
+    margin-bottom: 2rem;
+  }
+  &__heading {
+    margin: 3rem 0 1.5rem;
+    text-align: center;
+
+    h2 {
+      color: var(--dark-gray);
+      display: inline;
+      font-size: var(--big);
+    }
+
+    span {
+      width: 75px;
+      border-bottom: 1px solid #ccd6f6;
+      display: inline-block;
+      margin: 0 1rem 0.5rem;
+    }
+  }
+
+  &__uptriangle_shape_mobile {
+    position: absolute;
+    top: 67%;
+    right: 3px;
+  }
+
+  &__uptriangle_shape_desktop {
+    display: none;
+  }
+
+  form input[type='text'],
+  form textarea {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background: var(--secondary-color);
+    padding: 0.8rem;
+    color: var(--light-gray);
+    width: 100%;
+    margin-bottom: 0.625rem;
+    transition: 0.2s ease all;
+  }
+
+  form input[type='text']:focus,
+  form textarea:focus {
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    outline: none;
+  }
+
+  form input::placeholder,
+  textarea::placeholder {
+    color: var(--light-gray);
+    font-weight: 500;
+  }
+
+  form input[type='submit'] {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    padding: 1.063rem 1.969rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    margin-top: 1rem;
+  }
+
+  form input[type='submit']:hover {
+    opacity: 0.8;
+  }
+
+  form input[type='submit']:active {
+    opacity: 0.4;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --type-scale: 1.4;
+  }
+
+  .contact {
+    padding: 2.5rem 9.7rem;
+    &__text {
+      text-align: center;
+      font-size: var(--base-size);
+    }
+
+    &__uptriangle_shape_mobile {
+      display: none;
+    }
+
+    &__uptriangle_shape_desktop {
+      display: block;
+      position: absolute;
+      top: 52%;
+      right: 2.5%;
+    }
+    form input[type='text'],
+    form textarea {
+      margin-bottom: 1.2rem;
+    }
+
+    form input[type='submit'] {
+      padding: 1.4rem 3rem;
+    }
+
+    form input[type='text'] {
+      height: 70px;
+    }
+
+    form textarea {
+      height: 270px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    --type-scale: 1.414;
+  }
+  .form_flex_div {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    form input[type='text'],
+    form textarea {
+      font-size: var(--base-size);
+    }
+
+    form input[type='submit'] {
+      padding: 1.656rem 3.938rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1372px) {
+  :root {
+    --type-scale: 1.5;
+  }
+}

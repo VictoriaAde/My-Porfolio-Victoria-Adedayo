@@ -1,0 +1,131 @@
+/* PORJECT SECTION */
+.project_con {
+  text-align: center;
+  margin: 10rem 1rem;
+  position: relative;
+
+  &__triangle_shape--mobile {
+    position: absolute;
+    top: 17%;
+    left: -9px;
+  }
+
+  &__triangle_shape--desktop {
+    display: none;
+  }
+  &__heading {
+    margin: 3rem 0 1.5rem;
+    text-align: center;
+
+    h2 {
+      color: var(--dark-gray);
+      display: inline;
+      font-size: var(--big);
+    }
+
+    span {
+      width: 75px;
+      border-bottom: 1px solid #ccd6f6;
+      display: inline-block;
+      margin: 0 1rem 0.5rem;
+    }
+  }
+  &__text {
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+    font-size: var(--base-size);
+  }
+
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.089rem 1rem 2.934rem;
+
+    .project {
+      width: 270px;
+      height: 150px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      margin-bottom: 1.286rem;
+    }
+  }
+
+  &__github_link {
+    text-decoration: none;
+    text-align: center;
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+    letter-spacing: 0.001em;
+    border-radius: 5px;
+    padding: 1.063rem 1.219rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --type-scale: 1.4;
+  }
+
+  .project_con {
+    margin: 0 2rem;
+
+    &__projects {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 3.089rem 1rem;
+
+      .project {
+        width: 330px;
+        height: 200px;
+        margin-left: 1.5rem;
+      }
+    }
+
+    &__triangle_shape--mobile {
+      display: none;
+    }
+
+    &__triangle_shape--desktop {
+      position: absolute;
+      top: 22%;
+      left: 0;
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    --type-scale: 1.414;
+  }
+  .project_con {
+    &__github_link {
+      font-size: var(--small);
+      padding: 2.094rem 4.169rem;
+      letter-spacing: 0.0015em;
+    }
+
+    &__projects {
+      margin: 3.089rem 1rem 5.351rem;
+      .project {
+        width: 330px;
+        height: 220px;
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1372px) {
+  :root {
+    --type-scale: 1.5;
+  }
+  .project_con__text {
+    font-size: var(--small);
+  }
+}
