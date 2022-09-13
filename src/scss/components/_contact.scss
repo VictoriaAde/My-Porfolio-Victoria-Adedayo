@@ -87,15 +87,10 @@
   }
 
   .contact {
-    padding: 5.5rem 2.7rem;
+    padding: 2.5rem 9.7rem;
     &__text {
       text-align: center;
       font-size: var(--base-size);
-    }
-
-    .form_flex_div {
-      display: flex;
-      gap: 2rem;
     }
 
     &__uptriangle_shape_mobile {
@@ -106,7 +101,11 @@
       display: block;
       position: absolute;
       top: 52%;
-      right: 3px;
+      right: 2.5%;
+    }
+    form input[type='text'],
+    form textarea {
+      margin-bottom: 1.2rem;
     }
 
     form input[type='submit'] {
@@ -126,6 +125,10 @@
 @media screen and (min-width: 900px) {
   :root {
     --type-scale: 1.414;
+  }
+  .form_flex_div {
+    display: flex;
+    gap: 2rem;
   }
 }
 

@@ -72,6 +72,8 @@
   }
 
   .project_con {
+    margin: 0 2rem;
+
     &__projects {
       display: flex;
       flex-direction: row;
@@ -80,8 +82,8 @@
 
       .project {
         width: 330px;
-        height: 220px;
-        margin-left: 2.097rem;
+        height: 200px;
+        margin-left: 1.5rem;
       }
     }
 
@@ -111,6 +113,11 @@
 
     &__projects {
       margin: 3.089rem 1rem 5.351rem;
+      .project {
+        width: 330px;
+        height: 220px;
+        margin-left: 3rem;
+      }
     }
   }
 }
