@@ -4,19 +4,20 @@ import { runScrollReveal } from './scrollReaveal';
 runScrollReveal();
 
 // Nav
-const menuClose = document.getElementById('closeMenuBtn');
-const menuOpen = document.getElementById('openMenuBtn');
-const mobileMenu = document.querySelector('.mobile-nav');
 
-console.log(menuClose, menuOpen, mobileMenu);
+// const menuClose = document.getElementById('closeMenuBtn');
+// const menuOpen = document.getElementById('openMenuBtn');
+// const mobileMenu = document.querySelector('.mobile-nav');
 
-menuOpen.addEventListener('click', () => {
-  mobileMenu.classList.toggle('show');
-  // menuClose.style.display = "block";
-});
+// console.log(menuClose, menuOpen, mobileMenu);
 
-menuClose.addEventListener('click', () => {
-  mobileMenu.classList.toggle('show');
-  // mobileMenu.classList.contains('show')
-  // menuClose.style.display = "none";
-});
+// menuOpen.addEventListener('click', () => {
+//   mobileMenu.classList.toggle('show');
+//   // menuClose.style.display = "block";
+// });
+
+// menuClose.addEventListener('click', () => {
+//   mobileMenu.classList.toggle('show');
+//   // mobileMenu.classList.contains('show')
+//   // menuClose.style.display = "none";
+// });
