@@ -70,16 +70,18 @@
     padding: 1.063rem 1.969rem;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.2s ease all;
+    transition: all 0.5s ease;
     margin-top: 1rem;
-  }
 
-  form input[type='submit']:hover {
-    opacity: 0.8;
-  }
-
-  form input[type='submit']:active {
-    opacity: 0.4;
+    &:hover {
+      background-color: var(--btnhover-color);
+      border: dotted var(--secondary-color);
+      padding: 1rem 1.9rem;
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.4;
+    }
   }
 }
 
@@ -113,6 +115,12 @@
 
     form input[type='submit'] {
       padding: 1.4rem 3rem;
+      &:hover {
+        background-color: var(--btnhover-color);
+        border: dotted var(--secondary-color);
+        padding: 1.33rem 2.95rem;
+        opacity: 0.8;
+      }
     }
 
     form input[type='text'],
@@ -146,6 +154,12 @@
 
     form input[type='submit'] {
       padding: 1.656rem 3.938rem;
+      &:hover {
+        background-color: var(--btnhover-color);
+        border: dotted var(--secondary-color);
+        padding: 1.6rem 3.8rem;
+        opacity: 0.8;
+      }
     }
   }
 }
