@@ -5,19 +5,19 @@ runScrollReveal();
 
 // Nav
 
-// const menuClose = document.getElementById('closeMenuBtn');
-// const menuOpen = document.getElementById('openMenuBtn');
-// const mobileMenu = document.querySelector('.mobile-nav');
+// Nav
+let menuBtn = document.querySelector('.menu-btn');
 
-// console.log(menuClose, menuOpen, mobileMenu);
+menuBtn.addEventListener('click', () => {
+  // Toggle the class name change for hambunger button to change to "X"
+  menuBtn.classList.toggle('change');
 
-// menuOpen.addEventListener('click', () => {
-//   mobileMenu.classList.toggle('show');
-//   // menuClose.style.display = "block";
-// });
+  let mobileNav = document.querySelector('.mobile-nav');
+  mobileNav.classList.toggle('showMobileNav');
+});
 
-// menuClose.addEventListener('click', () => {
-//   mobileMenu.classList.toggle('show');
-//   // mobileMenu.classList.contains('show')
-//   // menuClose.style.display = "none";
+// window.addEventListener('click', (event) => {
+//   if (event.target === mobileNav) {
+//     mobileNav.classList.remove('showMobileNav');
+//   }
 // });

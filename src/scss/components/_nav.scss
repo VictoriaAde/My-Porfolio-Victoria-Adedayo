@@ -34,33 +34,75 @@ header {
     width: 250px;
     display: none;
     padding: 1rem 0 1rem 2rem;
-    background-color: #12233d;
+    background-color: #0e1c31;
+    transition: all 0.5s ease;
+
+    &.show {
+      display: block;
+    }
 
     li {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
 
       a {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
+
+    .social_link {
+      font-size: var(--small);
+      color: var(--secondary-color);
+      background: var(--light-gray);
+      border-radius: 50%;
+      padding: 0.3rem;
+      margin-bottom: 1.3rem;
+    }
+  }
+  .showMobileNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0.5rem 2rem;
+    background-color: #0f1d31;
+    box-shadow: -3px 17px 13px 4px #0f1a2b;
   }
 
   button {
     border: none;
   }
-
-  .close-menu {
-    display: none;
+  .menu-btn {
     background-color: var(--secondary-color);
+
+    svg {
+      cursor: pointer;
+
+      rect {
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 
-  .open-menu {
-    background-color: var(--secondary-color);
+  .change {
+    rect.middle {
+      x: 0;
+      opacity: 0;
+    }
+    rect.top {
+      transform: rotate(45deg);
+      transform-origin: center top;
+      x: 50px;
+      y: 35px;
+    }
+    rect.bottom {
+      transform: rotate(-45deg);
+      transform-origin: center top;
+      x: -20px;
+      y: 25px;
+    }
   }
-}
-
-.show {
-  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,7 +120,6 @@ header {
       display: none;
     }
   }
-
   .desktop-menu {
     width: 100%;
     position: fixed;
@@ -96,12 +137,13 @@ header {
 
       li {
         margin-left: 2rem;
+        position: relative;
 
         a {
           font-size: 1.1rem;
           line-height: 1.438rem;
           padding: 0 0.3em;
-          transition: all 2s linear;
+          transition: 1s linear 0s;
 
           &:hover {
             border-bottom: 2px solid var(--accent-color);
