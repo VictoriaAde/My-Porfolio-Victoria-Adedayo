@@ -80,7 +80,7 @@ header {
   }
   .menu_btn {
     background-color: var(--secondary-color);
-    width: 32px;
+    width: 30px;
     height: 19px;
     position: relative;
     transform: rotate(0deg);
@@ -92,7 +92,7 @@ header {
       display: block;
       position: absolute;
       left: 0;
-      height: 5px;
+      height: 3px;
       width: 100%;
       border-radius: 9px;
       opacity: 1;
@@ -104,10 +104,10 @@ header {
       }
       &:nth-child(2),
       &:nth-child(3) {
-        top: 10px;
+        top: 8px;
       }
       &:nth-child(4) {
-        top: 21px;
+        top: 17px;
       }
     }
 
