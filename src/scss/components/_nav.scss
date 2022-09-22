@@ -73,36 +73,85 @@ header {
   button {
     border: none;
   }
-  .menu-btn {
+  .menu_btn_con {
+    cursor: pointer;
+  }
+  .menu_btn {
     background-color: var(--secondary-color);
+    width: 32px;
+    height: 19px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 
-    svg {
-      cursor: pointer;
+    span {
+      background-color: var(--accent-color);
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      border-radius: 9px;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
 
-      rect {
-        transition: all 0.3s ease-in-out;
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 10px;
+      }
+      &:nth-child(4) {
+        top: 21px;
       }
     }
+
+    &.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+    &.open span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &.open span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    &.open span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+    // svg {
+    //   cursor: pointer;
+
+    //   rect {
+    //     transition: all 0.3s ease-in-out;
+    //   }
+    // }
   }
 
-  .change {
-    rect.middle {
-      x: 0;
-      opacity: 0;
-    }
-    rect.top {
-      transform: rotate(45deg);
-      transform-origin: center top;
-      x: 50px;
-      y: 35px;
-    }
-    rect.bottom {
-      transform: rotate(-45deg);
-      transform-origin: center top;
-      x: -20px;
-      y: 25px;
-    }
-  }
+  // .change {
+  //   rect.middle {
+  //     x: 0;
+  //     opacity: 0;
+  //   }
+  //   rect.top {
+  //     transform: rotate(45deg);
+  //     transform-origin: center top;
+  //     x: 50px;
+  //     y: 35px;
+  //   }
+  //   rect.bottom {
+  //     transform: rotate(-45deg);
+  //     transform-origin: center top;
+  //     x: -20px;
+  //     y: 25px;
+  //   }
+  // }
 }
 
 @media screen and (min-width: 768px) {
