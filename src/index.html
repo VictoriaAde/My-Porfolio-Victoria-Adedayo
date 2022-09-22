@@ -33,6 +33,7 @@
     <main>
       <!-- HEADER SECTION -->
       <header>
+        <!-- desktop menu -->
         <div class="desktop-menu">
           <div>
             <a href="#"
@@ -52,6 +53,7 @@
           </nav>
         </div>
 
+        <!-- mobile menu  -->
         <div class="mobile-menu">
           <div>
             <a href="#"
@@ -62,25 +64,11 @@
           </div>
 
           <div class="menu_btn_con">
-            <button
-              id="openMenuBtn"
-              class="open-menu"
-              aria-label="Open menu button"
-            >
-              <img
-                src="https://res.cloudinary.com/freakingspicy/image/upload/v1662446242/portfolio%20imasges/menu_bebuw3.svg"
-                alt="Open menu button"
-              />
-            </button>
-            <button
-              id="closeMenuBtn"
-              class="close-menu"
-              aria-label="Close menu button"
-            >
-              <img
-                src="https://res.cloudinary.com/freakingspicy/image/upload/v1662446251/portfolio%20imasges/close-menu_z7b4tt.svg"
-                alt="Close menu button"
-              />
+            <button class="menu_btn" id="menuBtn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </button>
           </div>
           <nav class="mobile-nav">
@@ -91,6 +79,21 @@
               <li><a href="#blog">blog</a></li>
               <li><a href="#contact">contact</a></li>
             </ul>
+
+            <div class="links">
+              <a
+                href="https://www.linkedin.com/in/victoria-adedayo"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in social_link"></i>
+              </a>
+              <a href="https://twitter.com/Vickish11" target="_blank">
+                <i class="fa-brands fa-twitter social_link"></i>
+              </a>
+              <a href="https://github.com/VictoriaAde" target="_blank">
+                <i class="fa-brands fa-github social_link"></i>
+              </a>
+            </div>
           </nav>
         </div>
       </header>
@@ -113,7 +116,9 @@
             friendly and beautiful applications on the internet
           </p>
 
-          <a href="#" aria-label="Hire me button" class="hero__cta">Hire Me</a>
+          <a href="#contact" aria-label="Hire me button" class="hero__cta"
+            >Hire Me</a
+          >
         </div>
         <div class="hero__img">
           <img
@@ -286,6 +291,7 @@
         </div>
         <form method="post" action="">
           <div class="form_flex_div">
+            <label for="name" class="sr-only">Enter your your full name:</label>
             <input
               type="text"
               id="name"
@@ -294,8 +300,10 @@
               autocomplete="off"
               required
             />
+
+            <label for="email" class="sr-only">Enter your Email:</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="Email"
@@ -303,6 +311,10 @@
               required
             />
           </div>
+
+          <label for="subject" class="sr-only"
+            >Enter the subject your message:</label
+          >
           <input
             type="text"
             id="subject"
@@ -311,6 +323,8 @@
             autocomplete="off"
             required
           />
+
+          <label for="message" class="sr-only">Enter your message:</label>
           <textarea
             name="message"
             id="message"

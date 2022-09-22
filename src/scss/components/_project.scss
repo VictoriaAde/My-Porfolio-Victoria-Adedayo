@@ -63,6 +63,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
+
+    &:hover {
+      background-color: var(--btnhover-color);
+      border: dotted var(--secondary-color);
+      padding: 0.9rem 1.2rem;
+    }
   }
 }
 
@@ -109,6 +115,12 @@
       font-size: var(--small);
       padding: 2.094rem 4.169rem;
       letter-spacing: 0.0015em;
+
+      &:hover {
+        background-color: var(--btnhover-color);
+        border: dotted var(--secondary-color);
+        padding: 1.91rem 4rem;
+      }
     }
 
     &__projects {
