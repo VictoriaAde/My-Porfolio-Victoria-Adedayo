@@ -30,11 +30,21 @@
         color: var(--dark-gray);
         margin-bottom: 0.6rem;
         font-size: var(--big);
+        a {
+          color: var(--dark-gray);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
 
       p {
         color: var(--light-gray);
         font-size: var(--smaller);
+        svg {
+          margin-right: 0.2rem;
+        }
       }
 
       span {
@@ -43,20 +53,60 @@
         display: inline-block;
         margin: 0.8rem 0;
       }
+      .dot {
+        background-color: var(--dark-gray);
+        font-weight: bold;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        border: none;
+        margin: 0 0.4rem 0.2rem 0.4rem;
+      }
     }
+    &_img_div {
+      position: relative;
+      width: 100%;
 
+      .img_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        color: #fff;
+        transition: all 0.5s;
+      }
+      &:hover .img_overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.6);
+        color: #f1f1f1;
+      }
+      a {
+        text-decoration: none;
+        svg {
+          margin-right: 0.3rem;
+        }
+      }
+    }
     &_img_one {
-      background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1662583806/portfolio%20imasges/blog-img-one_ighiqe.svg'),
+      background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1663934928/portfolio%20imasges/SVG-Blog-Image_jehhzl.jpg'),
         #0a192f;
       background-size: cover;
       height: 219px;
       margin: 0 1rem;
+      position: relative;
     }
 
     &_img_two {
-      background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1662585460/portfolio%20imasges/blog-two-img_lncbkd.svg');
+      background: url('https://res.cloudinary.com/freakingspicy/image/upload/v1663935733/portfolio%20imasges/tailwindcss_s4x3sl.jpg');
       height: 219px;
-      background-size: cover;
+      width: 100%;
+      background-size: contain;
+      // background-repeat: no-repeat;
+      // background-position: center;
       margin: 1rem;
     }
 
