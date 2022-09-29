@@ -328,48 +328,56 @@
         </div>
         <form method="post" action="">
           <div class="form_flex_div">
-            <label for="name" class="sr-only">Enter your your full name:</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Name"
               autocomplete="off"
+              aria-label="Enter your your full name:"
               required
+              aria-required="true"
             />
 
-            <label for="email" class="sr-only">Enter your Email:</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Email"
               autocomplete="off"
+              aria-label="Enter your Email:"
               required
+              aria-required="true"
             />
           </div>
 
-          <label for="subject" class="sr-only"
-            >Enter the subject your message:</label
-          >
           <input
             type="text"
             id="subject"
             name="subject"
             placeholder="Subject"
             autocomplete="off"
+            aria-label="Enter the subject your message:"
+            aria-required="true"
             required
           />
 
-          <label for="message" class="sr-only">Enter your message:</label>
           <textarea
             name="message"
             id="message"
             cols="25"
             rows="5"
             placeholder="Message"
+            aria-label="Enter your message:"
+            required
+            aria-required="true"
           ></textarea>
-          <input type="submit" name="submit" value="Send Message" />
+          <input
+            type="submit"
+            name="submit"
+            aria-label="Send Message"
+            value="Send Message"
+          />
         </form>
       </section>
 

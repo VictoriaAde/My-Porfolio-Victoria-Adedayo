@@ -37,10 +37,6 @@ header {
     background-color: #0e1c31;
     transition: all 0.5s ease;
 
-    &.show {
-      display: block;
-    }
-
     li {
       margin-bottom: 0.5rem;
 
@@ -49,7 +45,9 @@ header {
         padding: 0.4rem 5rem 0.4rem 0;
       }
     }
-
+    .links {
+      padding: 0 1rem;
+    }
     .social_link {
       font-size: var(--small);
       color: var(--secondary-color);
@@ -66,7 +64,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem 0.5rem 2rem;
+    padding: 2rem 1rem 0.5rem 2rem;
     background-color: #0f1d31;
     box-shadow: -3px 17px 13px 4px #0f1a2b;
   }
@@ -126,33 +124,7 @@ header {
       width: 0%;
       left: 50%;
     }
-    // svg {
-    //   cursor: pointer;
-
-    //   rect {
-    //     transition: all 0.3s ease-in-out;
-    //   }
-    // }
   }
-
-  // .change {
-  //   rect.middle {
-  //     x: 0;
-  //     opacity: 0;
-  //   }
-  //   rect.top {
-  //     transform: rotate(45deg);
-  //     transform-origin: center top;
-  //     x: 50px;
-  //     y: 35px;
-  //   }
-  //   rect.bottom {
-  //     transform: rotate(-45deg);
-  //     transform-origin: center top;
-  //     x: -20px;
-  //     y: 25px;
-  //   }
-  // }
 }
 
 @media screen and (min-width: 768px) {
