@@ -167,19 +167,33 @@
   :root {
     --type-scale: 1.414;
   }
-  .blog__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // margin: 0 5rem;
-  }
-  .blog__item_img_div {
-    position: relative;
-    width: 70%;
+  .blog {
+    margin: 7rem 1rem 4rem;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // margin: 0 5rem;
+    }
+    &__item_img_div {
+      position: relative;
+      width: 350px;
+    }
+    &__item_description {
+      width: 385px;
+    }
   }
 }
-
+@media screen and (min-width: 1025px) {
+  .blog {
+    margin: 7rem 8rem 4rem;
+  }
+}
 @media screen and (min-width: 1372px) {
   :root {
     --type-scale: 1.5;
+  }
+  .blog {
+    margin: 7rem 8rem 4rem;
   }
 }
