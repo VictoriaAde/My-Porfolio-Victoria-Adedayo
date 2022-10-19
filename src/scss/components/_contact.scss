@@ -1,7 +1,7 @@
 /* CONTACT SECTION */
 .contact {
   position: relative;
-  padding: 4rem 1rem;
+  padding: 1.3rem 1rem 4rem;
   text-align: center;
   margin-bottom: 3rem;
 
@@ -37,7 +37,9 @@
   &__uptriangle_shape_desktop {
     display: none;
   }
-
+  form {
+    font-family: 'Roboto', sans-serif;
+  }
   form input[type='text'],
   form input[type='email'],
   form textarea {
@@ -49,6 +51,7 @@
     width: 100%;
     margin-bottom: 0.625rem;
     transition: 0.2s ease all;
+    font-family: 'Roboto', sans-serif;
   }
 
   form input[type='text']:focus,
@@ -62,6 +65,7 @@
   textarea::placeholder {
     color: var(--light-gray);
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
   }
 
   form input[type='submit'] {
@@ -72,6 +76,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
     margin-top: 1rem;
+    font-size: 1.2rem;
 
     &:hover {
       background-color: var(--btnhover-color);
@@ -91,7 +96,7 @@
   }
 
   .contact {
-    padding: 2.5rem 9.7rem;
+    padding: 0 9.7rem 2.5rem;
     &__text {
       text-align: center;
       font-size: var(--base-size);
@@ -149,9 +154,12 @@
     form input[type='text'],
     form input[type='email'],
     form textarea {
-      font-size: var(--base-size);
+      font-size: calc(var(--base-size) * 1.2);
+      padding-left: 1.25rem;
     }
-
+    form textarea {
+      padding-top: 2.5rem;
+    }
     form input[type='submit'] {
       padding: 1.656rem 3.938rem;
       &:hover {
