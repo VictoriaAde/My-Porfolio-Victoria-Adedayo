@@ -50,7 +50,11 @@
       margin-bottom: 1.286rem;
     }
   }
-
+  .github_link_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__github_link {
     text-decoration: none;
     text-align: center;
@@ -92,7 +96,16 @@
         margin-left: 1.5rem;
       }
     }
+    &__github_link {
+      margin-left: 2rem;
+      padding: 1rem 1rem;
 
+      &:hover {
+        background-color: var(--btnhover-color);
+        border: dotted var(--secondary-color);
+        padding: 0.9rem 1.2rem;
+      }
+    }
     &__triangle_shape--mobile {
       display: none;
     }
@@ -112,15 +125,15 @@
   }
   .project_con {
     &__github_link {
-      font-size: var(--small);
-      padding: 2.094rem 4.169rem;
+      font-size: calc(var(--base-size) * 1.2);
+      padding: 1.5rem 2rem;
       letter-spacing: 0.0015em;
-      margin-left: 4rem;
+      margin-left: 3.2rem;
 
       &:hover {
         background-color: var(--btnhover-color);
         border: dotted var(--secondary-color);
-        padding: 1.91rem 4rem;
+        padding: 1.3rem 1.7rem;
       }
     }
 
